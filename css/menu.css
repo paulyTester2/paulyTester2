@@ -1,0 +1,82 @@
+.navbar-default{
+
+	background-color: red ;
+	  border-color: transparent;
+
+	}
+
+#menu .nav-tabs li{
+	color: red;
+}
+
+.nav-tabs li{
+	font-size: 24px;
+	color: red;
+	}
+
+
+#menuTitle h1 {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold; 
+    text-align: left;
+    letter-spacing: 2px; 
+}
+#menuTitle h3 {
+    font-family: "Futura", Futura, sans-serif;
+    text-align: left;
+}
+#menuTitle h4 {
+    font-family: "Futura", Futura, sans-serif;
+    text-align: left;
+}
+#menuTitle p {
+    font-family: "Calibri", Calibri, sans-serif;
+    font-size: 16px; 
+}
+
+.menuBoard {
+    height: 350px;
+}
+#slide2{
+  background: url('../images//krispyKream2.png') top center no-repeat;
+}
+
+#slide1{
+  background: url('../images//paulysCarouselver2.jpg') top center no-repeat;
+}
+
+
+.col-md-12{
+    margin-bottom: 20%;
+}
+
+
+.menuTitle p:hover{
+     background-color: transparent;
+    cursor: pointer;
+   transition: all ease .7s;
+  -webkit-transition: all ease .7s;
+  -moz-transition: all ease .7s;
+    }
+
+.menuTitle p:hover:before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    left:40%;
+    bottom: 5px;
+    border-bottom: 4px solid #973639;
+    transition: all ease .7s;
+    -webkit-transition: all ease .7s;
+    -moz-transition: all ease .7s;
+   
+}
+
+.menuTitle p{
+
+   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   transition: all ease .7s;
+  -webkit-transition: all ease .7s;
+  -moz-transition: all ease .7s;
+  font-size: 18px;
+}

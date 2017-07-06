@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pauly's Pizza Joint</title>
+    <!-- Our Own CSS -->
+    <link rel="shortcut icon" href="images/a-master-favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    
+    <!-- Bootstrap Core CSS --> 
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+    <!-- Fixed navbar -->
+<nav class="navbar" style=" position:fixed; z-index:2; width: 100%; ">
+  <div class="container"  style=" width: 50%; " >
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> <img id="img-logo" src="images/paulyVec.png" ></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="menu.html">MENU</a></li>
+        <li><a href="catering.html">CATERING</a></li>
+        <li><a href="story.html">ABOUT</a></li>
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+           <li><a href="#"><img style = "width:100px; margin-top: -10px;" src="images/prime.jpg" ></a></li>
+          
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+  
+</nav>
+  
+     
+      <div class="menuBoard" id = "slide2" style = "display: block;">
+      </div>
+
+      <div class="menuBoard" id = "slide3" style = "display: none;">
+      </div>
+
+  
+      <div class="menuBoard" id = "slide4" style = "display: none;">
+      </div>
+
+  
+      <div class="menuBoard" id = "slide5" style = "display: none;">
+      </div>
+
+  
+      <div class="menuBoard" id = "slide6" style = "display: none;">
+      </div>
+
+  
+      <div class="menuBoard" id = "slide7" style = "display: none;">
+      </div>
+
+
+
+        <div class="container">
+             <center>
+             <div class="menuTitle animated fadeIn">
+                    <div class="col-md-12" style="margin-bottom: 5%; margin-top: 5%;">
+                      <div class = "col-xs-6 col-md-2">
+                          <p id ="menuPizza" onclick="pizza()">PIZZA</p>
+                      </div>
+                      <div class = "col-xs-6 col-md-2">
+                           <p id ="menuRolls" onclick="rolls()">ROLLS</p>
+                      </div>
+                         <div class = "col-xs-6 col-md-2">
+                          <p id ="menuSandwiches" onclick="sandwiches()">SANDWICHES</p>
+                      </div>
+
+                      <div class = "col-xs-6 col-md-2">
+                          <p id ="menuApp" onclick="appetizers()">APPETIZERS</p>
+                      </div>
+                      <div class = "col-xs-6 col-md-2">
+                          <p id ="menuSalad" onclick="salad()">SALAD</p>
+                      </div>
+                   
+                      <div class = "col-xs-6 col-md-2">
+                          <p id ="menuDesserts" onclick="desserts()">DESSERTS</p>
+                      </div>
+
+                    </div>
+               
+              </div>
+              </center>
+
+  <div class="container" style="padding-top:0px" id="fonts">
+    <div  class="row"> 
+      <div id="pizza" class="col-md-12" style = "display: block;">
+        <main id="accordion">
+     
+            <div class="menuTitle" id="menuTitleOne">
+                <h1>Pizza</h1>
+              <h4><i>signature thin crust pies</i></h4>
+         
+            </div>
+   
+        <div class="col-md-6" id = "border">
+          <section id="traditional"> <!-- Each "section" is a part of the accordion -->
+             <p id="imageOne" style = "font-family: 'Zilla Slab', serif;"> TRADITIONAL PIES<span style="float: right;">size "16 &nbsp; &nbsp &nbsp "18</span></p><!-- title of accordion -->
+           <p class="menuItem" id="traditionalP" align="right"></p> <!-- conent within accordion -->
+            <p class="menuItem" id="tradCheese"> <b>Cheese </b> <span style="float: right;"> 14 &nbsp; &nbsp &nbsp &nbsp 16 &nbsp</span> </p>
+            <p class="menuItem" id="tradPepp"> <b>Pepperoni </b> <span style="float: right;"> 15.50 &nbsp; 17.50 &nbsp</span> </p>
+          </section>
+          <section id="paulyChoice">
+            <p id="imageTwo" style = "font-family: 'Zilla Slab', serif;"> PAULY's CHOICE <span style="float: right;">size "16 &nbsp; &nbsp &nbsp "18 </span> </p>
+            <p class="menuItem" id="size" align="right">  </p>
+            <p class="menuItem" id="pWalnuts" > <b> Pauly Walnuts </b> <span style="float: right;"> 22 &nbsp; &nbsp &nbsp &nbsp 24 &nbsp</span>
+            <br>
+  
+            <small>Pepperoni, sausage, bacon, fresh mushroom, red onion, green pepper, black olives (no walnuts)</small></p>
+            
+            <p class="menuItem" id="tko"> <b> TKO </b> <span style="float: right;"> 21 &nbsp; &nbsp &nbsp &nbsp 23 &nbsp </span> 
+               <br>
+            <small> Pepperoni, sausage, meatball, bacon, red pie </small>
+            </p>
+            
+            <p class="menuItem" id="spinageTroi"> <b> Spinage a Trois </b> <span style="float: right;"> 21 &nbsp; &nbsp &nbsp &nbsp 23 &nbsp</span>    <br> 
+             
+            <small> Spinach, sausage, meatball, ricotta, red pie</small>
+            </p>
+             
+            <p class="menuItem" id="mikeyShow"> <b> Mikey Show </b><span style="float: right;"> 21 &nbsp; &nbsp &nbsp &nbsp 23 &nbsp</span>     <br>
+            <small>Pepperoni, sausage, ricotta, jalapeno, red pie</small>
+            </p>
+             
+            <p class="menuItem" id="bPie"> <b> "B" Pie </b> <span style="float: right;"> 18.50 &nbsp; 20.50 &nbsp</span>    <br>
+            <small>Sausage, meatballs, red pie </small>
+            </p>
+             
+            <p class="menuItem" id="hawaii"> <b> Hawaiian </b> <span style="float: right;"> 18.50 &nbsp; 20.50 &nbsp</span>    <br>
+            <small>Ham, pineapple, red pie</small>
+            </p>
+             
+            <p class="menuItem" id="xmasPie"> <b> Christmas Pie </b> <span style="float: right;"> 21.75 &nbsp; 23.75 &nbsp</span>    <br>
+            <small> Spinach, bacon, pepperoni, garlic, feta cheese, no sauce</small>
+            </p>
+             
+            <p class="menuItem" id="whiteCaps"> <b> White Caps </b> <span style="float: right;"> 20.75 &nbsp; 22.75 &nbsp</span>    <br>
+            <small>Ricotta, mozarella, parmesan, garlic, no sauce</small>
+            </p>
+             
+            <p class="menuItem" id="whiteMeat"> <b> White Meat </b> <span style="float: right;"> 21 &nbsp; &nbsp &nbsp &nbsp 23 &nbsp</span>    <br>
+            <small>Pepperoni, sausage, meatball, bacon, no sauce</small>
+            </p>
+          </section>
+          </div>
+
+        <div class="col-md-6" id = "border">
+          <section id="chickenPies">
+           <p id="imageThree" style = "font-family: 'Zilla Slab', serif;"> CHICKEN PIES <span style="float: right;">size "16 &nbsp; &nbsp &nbsp "18</span>  </p>
+            <p class="menuItem" id="cSize" align="right"></p>
+            <p class="menuItem" id="petsy"> <b>Pesty</b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp </span>    <br>
+              <small> Whitecaps, chicken, basil pesto, no sauce </small>
+            </p>
+            <p class="menuItem" id="bbq"> <b>BBQ</b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp</span>    <br>
+              <small>Chicken, bacon, bbq sauce drizzle, no sauce</small>
+            </p>
+            <p class="menuItem" id="buffalo"> <b>Buffalo</b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp</span>    <br>
+             <small> Chicken, red hot sauce, ranch drizzle</small>
+            </p>
+            <p class="menuItem" id="ranch"> <b> Ranch </b> <span style="float: right;"> 21.50 &nbsp; 23.50&nbsp </span>    <br>
+             <small> Chicken, bacon, ranch drizzle, no sauce</small>
+            </p>
+            <p class="menuItem" id="chipotle"> <b> Chipotle </b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp</span>    <br>
+              <small>Chicken, bacon, chipotle sauce drizzle, no sauce</small>
+            </p>
+          </section>
+          <section id="healthyChoice">
+           <p id="imageFour" style = "font-family: 'Zilla Slab', serif;"> HEALTHY CHOICE <span style="float: right;">size "16 &nbsp; &nbsp &nbsp "18</span></p>
+            <p class="menuItem" id="hSize" align="right"> </p>
+            <p class="menuItem" id="veggie"> <b>Veggie </b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp</span>    <br>
+            <small>Mushroom, bell peppers, black olive, onion, spinach, tomatoes, artichoke, red sauce</small>
+            </p>
+            <p class="menuItem" id="italian"> <b>Italian </b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp</span>    <br>
+              <small> Whitecaps, spinach, mushrooms, artichoke </small>
+            </p>
+            <p class="menuItem" id="monaVi"> <b>Mona Vi </b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp </span>    <br>
+              <small> Whitecaps, spinach, mushroom, artichoke </small>
+            </p>
+            <p class="menuItem" id="margarita"> <b>Margarita </b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp </span>    <br>
+              <small> Fresh tomato, basil pesto, parmesan, garlic </small>
+            </p>
+            <p class="menuItem" id="vegan"> <b>Vegan </b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp </span>    <br>
+              <small> Your choice of 4 fresh veggies with home made cheeseless sauce </small>
+            </p> 
+            </section> 
+            </div>   
+
+
+          </div>
+
+
+          <div id="rolls" class="col-md-12" style = "display: none;">
+            <div class="menuTitle" id="menuTitleTwo">
+                <h1>Calzones/Rolls</h1>
+              <h4><i>served with a side of marinara sauce</i></h4>
+                
+            </div>
+
+            <div class="col-md-6" id = "border">
+                <a href="#calzoneRoll" id="imageFive"> </a>
+                <p class="menuItem" id="calzone"> <b>Calzone </b> <span style="float: right;"> 10 </span>    <br>
+                <small> Baked pocket with: ricotta, mozzarella, parmesan, garlic, choice of 3 toppings</small>
+                </p>
+                <p class="menuItem" id="stromboli"> <b>Stromboli </b> <span style="float: right;"> 10 </span>    <br>
+                <small> Baked roll with: pepperoni, mozzarella, ham, red onions, green peppers, parmesan, garlic </small>
+                </p>
+          
+                <p class="menuItem" id="sausageRoll"> <b>Sausage Roll </b> <span style="float: right;"> 10 </span>    <br>
+                <small> Baked roll with: sausage, ricotta, mozarella, homemade sauce, parmesan</small>
+                </p>
+                  </div>
+            <div class="col-md-6" id = "border">
+                <p class="menuItem" id="meatballRoll"> <b>Meatball Roll </b> <span style="float: right;"> 10 </span>    <br>
+                <small> Baked roll with: meatball, ricotta, mozzarella, homemade sauce, parmesan, garlic </small>
+                <p class="menuItem" id="spinachRoll"> <b>Spinach Roll </b> <span style="float: right;"> 10 </span>    <br>
+                <small> Baked roll with: fresh spinach, mozzarella, ricotta, parmesan, garlic </small>
+                </p>
+            </div>
+          </div>
+
+          <div id="sandwiches" class="col-md-12" style = "display: none;">
+              <div class="menuTitle" id="menuTitleThree">
+                <h1>Sandwiches</h1>
+              </div>
+              <div class="col-md-6" id = "border">
+                  <a href="#sandwiches" id="imageSix"> </a>
+                  <p class="menuItem" id="italianSub"> <b>Italian Sub</b> <span style="float: right;"> 8.50 </span>    <br>
+                  <small>Ham, salami, capicola, mozzarella, tomato, red onion, lettuce, italian dressing </small>
+                  </p>
+           
+                  <p class="menuItem" id="stromboliSan"> <b>Veggie Sub </b> <span style="float: right;"> 10 </span>    <br>
+                  <small>Spinach, tomatoes, red onion, artichoke, roasted red peppers, black olives, mozzarella, lettuce, italian dressing</small>
+                  </p>
+              </div>
+              <div class="col-md-6" id = "border">
+                  <p class="menuItem" id="parm"> <b>Sausage, Meatball, or Chicken Parm </b> <span style="float: right;"> 10 </span>    <br>   
+                 <small> Ricotta, mozzarella, homemade sauce, parmesan </small>
+              </div>
+          </div>
+
+
+          <div id="salads" class="col-md-12" style = "display: none;">
+            <div class="menuTitle" id="menuTitleFour">
+               <h1>Salads</h1>
+            </div>
+            <div class="col-md-6" id = "border">
+              <a href="#salad" id="imageSeven"> </a>
+              <p class="menuItem" align="right" id="sizeSalad"> <b>  small  &nbsp &nbsp  reg</b> </p>
+              <p class="menuItem" id="garden"> <b>Garden </b> <span style="float: right;"> 4.50 &nbsp; 6.50 &nbsp;</span>    <br>
+              <small> Fresh greens, tomato, black olives, red onions, pepperoncinis </small>
+              </p>
+              <p class="menuItem" id="caesar"> <b>Caesar </b> <span style="float: right;"> 5.50 &nbsp; 7.75 &nbsp;</span>    <br>
+              <small>Chopped lettuce, seasoned croutons, fresh shredded parmesan </small>
+              </p>
+              <p class="menuItem" id="greek"> <b>Greek </b> <span style="float: right;"> 5.75 &nbsp; 8.50 &nbsp;</span>    <br>
+              <small>Fresh greens, tomato, red onion, kalamata olives, feta cheese, pepperoncinis </small>
+              </p>
+            </div>
+            <div class="col-md-6" id = "border">
+              <p class="menuItem" id="antipasta"> <b>Antipasta </b> <span style="float: right;"> 6 &nbsp; &nbsp; &nbsp; 9 </span>    <br>
+              <small> Fresh greens, ham, salami, capicola, roasted peppers, mozzarella, tomato, black olives, pepperoncinies </small>
+              </p>
+        
+              <p class="menuItem" id="addChicken"> <b>Add chicken </b> <span style="float: right;"> 2.75 </span> </p>
+              <p class="menuItem" id="sideDressing"> <b>Side Dressing </b> <span style="float: right;"> 0.50 </span>    <br>
+              <small> Choose from: Italian, Ranch, Balsamic Vinagrette, Asian, Blue Cheese, Greek, or Caesar </small>
+            </div>
+          </div>
+
+          <div id="appetizers" class="col-md-12" style = "display: none;">
+            <div class="menuTitle" id="menuTitleFive">
+              <h1>Appetizers</h1>
+            
+            </div>
+             <div class="col-md-6" id = "border">
+                <a href="#appetizers" id="imageEight"> </a>
+                <p class="menuItem" align="right" id="sizeApp"> small &nbsp; &nbsp;reg </p>
+                <p class="menuItem" id="meatballsApp"><b>Meatballs </b> <span style="float: right;"> 7.50 &nbsp; 8.75 </span>    <br>
+               <small> Prepared with marinara sauce and served with garlic bread </small>
+                </p>
+                <p class="menuItem" id="gBread"> <b>10" Garlic Bread </b> <span style="float: right;"> 6.50 </span> 
+                </p>
+             </div>
+             <div class="col-md-6" id = "border">
+      
+                <p class="menuItem" id="gBigBread"> <b>16" Garlic Pizza Pie </b> <span style="float: right;"> 7.50 </span>    <br>
+                <small> Cut in strips and served with side of marinara sauce </small>
+                </p>
+                <p class="menuItem" id="cheeseApp"> <b>Add cheese </b> <span style="float: right;"> 1.50 </span> </p>
+             </div>
+          </div>
+
+          <div id="drinks" class="col-md-12" style = "display: none;">
+            <div class="menuTitle" id="menuTitleSeven">
+              <h1>Drinks</h1>
+            </div>
+           <div class="col-md-6" id = "border">
+            <a href="#drinks" id="imageTen"> </a>
+            <p class="menuItem" id="fountain"> <b>Fountain Drink </b> <span style="float: right;"> 2 </span>    <br>
+            <small> Free refill </small>
+            <p class="menuItem" id="sodaCan"> <b>Soda Can </b> <span style="float: right;"> 1.50 </span> </p>
+            <p class="menuItem" id="twoL"> <b>Two Liters </b> <span style="float: right;"> 3.75 </span> </p>
+            <p class="menuItem" id="domesticBeer"> <b>Domestic Beer </b> <span style="float: right;"> 5 </span>    <br>
+            <small> Coors Light, Bud Light, Miller Lite, Miller Genuine Draft </small>
+            </p>
+            <p class="menuItem" id="importedBeer"> <b>Imported Beer </b> <span style="float: right;"> 5 </span>    <br>
+            <small> St. Pauli Girl, Red Trolley, Fat Tire, Heineken, Blue Moon, Guiness, Corona Extra </small>
+            </p>
+          </div>
+            <p class="menuItem" id="localCraft"> <b>Local Craft </b> <span style="float: right;"> 5.50 - 6.00 </span>    <br>
+            <small> Varying selections from local and regional craft brewers </small>
+            </p>
+            <p class="menuItem" id="comboBeer"> <b>Combo </b> <span style="float: right;"> 10 </span>    <br>
+             <small> 2 Pizza Slices with 12oz beer </small>
+            </p>
+          </div>
+
+
+          <div id="desserts" class="col-md-12" style = "display: none;">
+            <div class="menuTitle" id="menuTitleSix">
+              <h1>Desserts</h1>
+            </div>
+            <div class="col-md-6" id = "border">
+                <a href="#desserts" id="imageNine">  </a>
+                <p class="menuItem" id="nycc"> <b>New York Cheesecake </b> <span style="float: right;"> 3.50 </span> </p>
+                <p class="menuItem" id="fc"> <b>Flavored Cheesecake </b> <span style="float: right;"> 3.50 </span> </p>
+            </div>
+          </div>
+
+
+          
+
+
+        <!--
+            <div class="menuTitle" id="menuTitleEight">
+              <h1>Specials</h1>
+              <h4><i>available daily </i></h4>
+               <div class = "row" id = "menImage" >
+                     <img src="images/combos.png" class="img-responsive" alt="">
+                </div>
+            </div>
+          <section id="specials">
+         <div class="col-md-6" id = "border">
+            <a href="#specials" id="imageEleven"></a>
+            <p class="menuItem" id="slice"> <b>Slice</b> <span style="float: right;"> 3 </span> </p>
+            <p class="menuItem" id="twoSlice"> <b>2 Slices and Fountain Drink with Refills</b> <span style="float: right;"> 7 </span> </p>
+            <p class="menuItem" id="oneSlice"> <b>1 Slice and Fountain Drink with Refills and Small Garden Salad</b> <span style="float: right;"> 8.50 </span> </p> 
+        </div>
+        <div class="col-md-6" id = "border"> 
+            <p class="menuItem" id="threeSlice"><b>3 Slices and Fountain Drink with Refills</b> <span style="float: right;"> 9 </span> </p>
+            <p class="menuItem" id="eightSlice"> <b>8 Slices from the Case</b><span style="float: right;"> 19.50 </span> </p>
+          </section>
+        -->
+        
+        </main>
+      </div>
+    </div> <!-- acordion end !-->
+    
+
+
+    </div> <!-- row end for bootstrap -->
+  
+
+
+  <div class="modal fade pop-up-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
+        </div>
+        <div class="modal-body">
+        <img src="images/yelp_photo_2.jpg" class="img-responsive center-block" alt="">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal mixer image -->
+
+    <div class="modal fade pop-up-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
+        </div>
+        <div class="modal-body">
+        <img src="images/yelp_photo_3.jpg" class="img-responsive center-block" alt="">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal mixer image -->
+
+    <div class="modal fade pop-up-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
+        </div>
+        <div class="modal-body">
+        <img src="images/yelp_photo_4.jpg" class="img-responsive center-block" alt="">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal mixer image -->
+     
+
+  <div class="modal fade pop-up-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
+        </div>
+        <div class="modal-body">
+        <img src="images/yelp_photo_8.jpg" class="img-responsive center-block" alt="">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal mixer image -->
+
+    <div class="modal fade pop-up-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
+        </div>
+        <div class="modal-body">
+        <img src="images/yelp_photo_Calzone.jpg" class="img-responsive center-block" alt="">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal mixer image -->
+
+    <div class="modal fade pop-up-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
+        </div>
+        <div class="modal-body">
+        <img src="images/yelp_photo_Strom.jpg" class="img-responsive center-block" alt="">
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal mixer image -->
+    <!-- Footer -->
+   <footer class="footer" id="footer">
+      <div class="container">
+        <a href="https://www.instagram.com/explore/locations/262510939/paulys-pizza-joint-inc/"><img src="images/insta.svg" alt="insta"></a>
+        <a href="https://www.yelp.com/biz/paulys-pizza-joint-san-diego-3"><img src="images/yelp.svg" alt="yelp"></a>
+        <a href="https://www.facebook.com/Paulys-Pizza-Joint-Inc-345121491789/"><img src="images/fb.svg" alt="fb"></a>
+        <p id="fonts">© 2017 Pauly's Pizza Joint</p>
+      </div>
+    </footer>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+        
+
+     
+
+    <script src = "menu.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+
+
+<script>  
+
+    function load(){
+          var highApp = document.getElementById('rollsButt').style.color = "rgb(242, 120, 75)";
+
+    }
+ 
+    function pizza(){
+
+
+        var a = document.getElementById('pizza').style.display = 'block';    
+        var b = document.getElementById('rolls').style.display = 'none';
+        var c = document.getElementById('sandwiches').style.display = 'none';
+        var d = document.getElementById('salads').style.display = 'none';
+        var e = document.getElementById('appetizers').style.display = 'none';
+        var f = document.getElementById('drinks').style.display = 'none';
+        var g = document.getElementById('desserts').style.display = 'none';
+      
+        var MP = document.getElementById('menuPizza').style.color = "rgb(167, 31, 35)";
+        var MR = document.getElementById('menuRolls').style.color = "black";
+        var MS = document.getElementById('menuApp').style.color = "black";
+        var MSD = document.getElementById('menuSalad').style.color = "black";
+        var MA = document.getElementById('menuSandwiches').style.color = "black";
+        var MD = document.getElementById('menuDesserts').style.color = "black";
+
+        var SP = document.getElementById('slide2').style.display = 'block';    
+        var SR = document.getElementById('slide3').style.display = 'none';
+        var SS = document.getElementById('slide4').style.display = 'none';
+        var SSD = document.getElementById('slide5').style.display = 'none';
+        var SA = document.getElementById('slide6').style.display = 'none';
+        var SD = document.getElementById('slide7').style.display = 'none';
+
+     }
+
+
+      function rolls(){
+
+
+        var a = document.getElementById('pizza').style.display = 'none';    
+        var b = document.getElementById('rolls').style.display = 'block';
+        var c = document.getElementById('sandwiches').style.display = 'none';
+        var d = document.getElementById('salads').style.display = 'none';
+        var e = document.getElementById('appetizers').style.display = 'none';
+        var f = document.getElementById('drinks').style.display = 'none';
+        var g = document.getElementById('desserts').style.display = 'none';
+      
+        var MP = document.getElementById('menuPizza').style.color = "black";
+        var MR = document.getElementById('menuRolls').style.color = "rgb(167, 31, 35)";
+        var MS = document.getElementById('menuApp').style.color = "black";
+        var MSD = document.getElementById('menuSalad').style.color = "black";
+        var MA = document.getElementById('menuSandwiches').style.color = "black";
+        var MD = document.getElementById('menuDesserts').style.color = "black";
+
+        var SP = document.getElementById('slide2').style.display = 'none';    
+        var SR = document.getElementById('slide3').style.display = 'block';
+        var SS = document.getElementById('slide4').style.display = 'none';
+        var SSD = document.getElementById('slide5').style.display = 'none';
+        var SA = document.getElementById('slide6').style.display = 'none';
+        var SD = document.getElementById('slide7').style.display = 'none';
+     }
+
+
+      function sandwiches(){
+
+
+        var a = document.getElementById('pizza').style.display = 'none';    
+        var b = document.getElementById('rolls').style.display = 'none';
+        var c = document.getElementById('sandwiches').style.display = 'block';
+        var d = document.getElementById('salads').style.display = 'none';
+        var e = document.getElementById('appetizers').style.display = 'none';
+        var f = document.getElementById('drinks').style.display = 'none';
+        var g = document.getElementById('desserts').style.display = 'none';
+      
+        var MP = document.getElementById('menuPizza').style.color = "black";
+        var MR = document.getElementById('menuRolls').style.color = "black";
+        var MS = document.getElementById('menuApp').style.color = "black";
+        var MSD = document.getElementById('menuSalad').style.color = "black";
+        var MA = document.getElementById('menuSandwiches').style.color = "rgb(167, 31, 35)";
+        var MD = document.getElementById('menuDesserts').style.color = "black";
+
+        var SP = document.getElementById('slide2').style.display = 'none';    
+        var SR = document.getElementById('slide3').style.display = 'none';
+        var SS = document.getElementById('slide4').style.display = 'block';
+        var SSD = document.getElementById('slide5').style.display = 'none';
+        var SA = document.getElementById('slide6').style.display = 'none';
+        var SD = document.getElementById('slide7').style.display = 'none';
+
+
+     }
+
+
+       function salad(){
+
+
+        var a = document.getElementById('pizza').style.display = 'none';    
+        var b = document.getElementById('rolls').style.display = 'none';
+        var c = document.getElementById('sandwiches').style.display = 'none';
+        var d = document.getElementById('salads').style.display = 'block';
+        var e = document.getElementById('appetizers').style.display = 'none';
+        var f = document.getElementById('drinks').style.display = 'none';
+        var g = document.getElementById('desserts').style.display = 'none';
+      
+        var MP = document.getElementById('menuPizza').style.color = "black";
+        var MR = document.getElementById('menuRolls').style.color = "black";
+        var MS = document.getElementById('menuApp').style.color = "black";
+        var MSD = document.getElementById('menuSalad').style.color = "rgb(167, 31, 35)";
+        var MA = document.getElementById('menuSandwiches').style.color = "black";
+        var MD = document.getElementById('menuDesserts').style.color = "black";
+
+           var SP = document.getElementById('slide2').style.display = 'none';    
+        var SR = document.getElementById('slide3').style.display = 'none';
+        var SS = document.getElementById('slide4').style.display = 'none';
+        var SSD = document.getElementById('slide5').style.display = 'block';
+        var SA = document.getElementById('slide6').style.display = 'none';
+        var SD = document.getElementById('slide7').style.display = 'none';
+     }
+      
+      function appetizers(){
+
+
+        var a = document.getElementById('pizza').style.display = 'none';    
+        var b = document.getElementById('rolls').style.display = 'none';
+        var c = document.getElementById('sandwiches').style.display = 'none';
+        var d = document.getElementById('salads').style.display = 'none';
+        var e = document.getElementById('appetizers').style.display = 'block';
+        var f = document.getElementById('drinks').style.display = 'none';
+        var g = document.getElementById('desserts').style.display = 'none';
+      
+        var MP = document.getElementById('menuPizza').style.color = "black";
+        var MR = document.getElementById('menuRolls').style.color = "black";
+        var MS = document.getElementById('menuApp').style.color = "rgb(167, 31, 35)";
+        var MSD = document.getElementById('menuSalad').style.color = "black";
+        var MA = document.getElementById('menuSandwiches').style.color = "black";
+        var MD = document.getElementById('menuDesserts').style.color = "black";
+
+        var SP = document.getElementById('slide2').style.display = 'none';    
+        var SR = document.getElementById('slide3').style.display = 'none';
+        var SS = document.getElementById('slide4').style.display = 'none';
+        var SSD = document.getElementById('slide5').style.display = 'none';
+        var SA = document.getElementById('slide6').style.display = 'block';
+        var SD = document.getElementById('slide7').style.display = 'none';
+
+     }
+  
+      function desserts(){
+
+
+        var a = document.getElementById('pizza').style.display = 'none';    
+        var b = document.getElementById('rolls').style.display = 'none';
+        var c = document.getElementById('sandwiches').style.display = 'none';
+        var d = document.getElementById('salads').style.display = 'none';
+        var e = document.getElementById('appetizers').style.display = 'none';
+        var f = document.getElementById('drinks').style.display = 'none';
+        var g = document.getElementById('desserts').style.display = 'block';
+      
+        var MP = document.getElementById('menuPizza').style.color = "black";
+        var MR = document.getElementById('menuRolls').style.color = "black";
+        var MS = document.getElementById('menuApp').style.color = "black";
+        var MSD = document.getElementById('menuSalad').style.color = "black";
+        var MA = document.getElementById('menuSandwiches').style.color = "black";
+        var MD = document.getElementById('menuDesserts').style.color = "rgb(167, 31, 35)";
+
+
+           var SP = document.getElementById('slide2').style.display = 'none';    
+        var SR = document.getElementById('slide3').style.display = 'none';
+        var SS = document.getElementById('slide4').style.display = 'none';
+        var SSD = document.getElementById('slide5').style.display = 'none';
+        var SA = document.getElementById('slide6').style.display = 'none';
+        var SD = document.getElementById('slide7').style.display = 'block';
+     }
+    
+
+
+
+</script>
+</html>
