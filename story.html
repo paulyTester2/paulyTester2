@@ -16,33 +16,36 @@
     <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/navQ.css">
 </head>
 <body>
     <!-- Fixed navbar -->
-<nav class="navbar" style=" position:fixed; z-index:2; width: 100%; margin-top: -20px;">
-  <div class="container"  style=" width: 50%; " >
+<nav class="navbar" style=" position:fixed; z-index:2; width: 100%; ">
+  <div class="container" id = "navStuff" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
+        <span class ="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"> <img id="img-logo" src="images/paulyVec.png" ></a>
+      <a class="navbar-brand" href="index.html"> <img id="img-logo" src="images/paulyVec.png" ></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
-        <li><a href="menu.html">MENU</a></li>
+        <li> <a href="menu.html">MENU</a></li>
         <li><a href="catering.html">CATERING</a></li>
         <li class="active"><a href="story.html">ABOUT</a></li>
       </ul>
      
       <ul class="nav navbar-nav navbar-right">
-           <li><a href="#"><img style = "width:100px; margin-top: -10px;" src="images/prime.jpg" ></a></li>
+           <li style = "background-color: #911a1e; height: 50px; margin-top: 5px ;"><a style = " font-size: 16px; line-height: 10px; margin-top: -6px; color: white; " href="https://primenow.amazon.com/restaurants/d/B06XNXMWW2?ref_=mrl_B06XNXMWW2"> <center> ORDER </center>
+           <br>
+           <center> NOW! </center> </a></li>
           
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -50,6 +53,10 @@
 
   
 </nav>
+
+    <div class = "sacrifice" style= "background-color:red; height:60px;"> 
+
+     </div> 
   
     <!-- logo layered on top of navbar -->
        
@@ -58,9 +65,11 @@
       <!-- Three columns of text below the carousel -->
 
 
-    <div class="parallax-ourstory" id="fonts">
+    <div class="parallax-ourstory" id="fonts" style="margin-top:-20px">
         <div id = "parallax-responsive">
-            <h1 style="letter-spacing:4px; color:white; padding-top:150px; padding-bottom:200px; font-weight:bold" id="parallax-responsive">OUR STORY</h1>
+            <div class = "container">
+             <h1 style="letter-spacing:4px; color:white; font-weight:bold" id="storyText">OUR STORY</h1>
+            </div>
         </div>
     </div>
     
@@ -73,50 +82,38 @@
                 <p>Pauly takes his family recipes handed down to him to start his own shop, making high quality and authentic NY style pizzas 2,774 miles away from its origin.</p>
             </div>
             <div class="col-md-8">
-                <center> <iframe width="90%" height= "40%" src="https://www.youtube.com/embed/5tKBNHfXn34" frameborder="0" allowfullscreen></iframe> </center>
+                <center> <iframe width="90%" height= "450px" src="https://www.youtube.com/embed/5tKBNHfXn34" frameborder="0" allowfullscreen></iframe> </center>
             </div>
         </div>    
     </div>
     </div>
     
-    <div id="black-container" >
-      <div class="container" style="padding-top:25px; padding-bottom:45px" id="fonts">
-        <div class="row" style="color:white">
-            <h1 style="font-size:60px"><font color="#911a1e">QUALITY</font> <font color="">PIES</font> <font color="#5A9558">EVERYDAY</font></h1>
-            <div class="col-md-6">
-                <h2 class="breakPoint">Quality Ingredients</h2>
-                <h2 class="breakPoint">Hand Tossed</h2>
-            </div>
-            <div class="col-md-6">
-                <h2 class="breakPoint">Fresh Dough</h2>
-                <h2 class="breakPoint">Stone oven</h2>
-            </div>
-        </div>    
-    </div>
-    </div>
+
     
-    <div id="white-container">
+    <div id="black-container">
       <div class="container" style="padding-top:25px; padding-bottom:45px" id="fonts">
-        <h1 style="font-size:55px">MEET THE OWNERS</h1>
+        <h1 style="font-size:55px; color:white;">MEET THE OWNERS</h1>
         <div class="row" style="text-align:left; padding-top:30px">
-            <div class="col-lg-8">
-                <h1>PAULY</h1>
-                <h3>Cultural and Food Expert</h3>
-                <p>Born and raised in Brooklyn, NY, Pauly grew up with the food culture of New York. He started out as an artist in San Diego with handling pizza as a side job, but now pizza is his main art. He is an expert on the food and quality. </p>
+            <div class="col-lg-6" style="text-align:center">
+                <center><img class="img-responsive" src="images/Pauly.jpg"></center>
             </div>
-            <div class="col-lg-4" style="text-align:center">
-                <img class="img-responsive" src="images/pauly.png">
+            <div class="col-lg-6">
+                <h1 style="margin-bottom: -17px; color: white;">PAULY</h1>
+                <i><h3 style="color:white;">Cultural and Food Expert</h3></i>
+                <p style="color:white;">Born and raised in Brooklyn, NY, Pauly grew up with the food culture of New York. He started out as an artist in San Diego with handling pizza as a side job, but now pizza is his main art. He is an expert on the food and quality. </p>
             </div>
+       
         </div>    
-        <div class="row" style="text-align:left; padding-top:30px">
-            <div class="col-lg-8">
-                <h1>MONA</h1>
-                <h3>Social and Managerial Forefront</h3>
-                <p>Since joining forces with Pauly to start Pauly's Pizza, Mona has been the forefront of customers' experiences. Customers often remember her friendliness and warmth, and many are on first name basis with her. She is also the financial and managerial expert.</p>
+        <div class="row" style="text-align:left; padding-top:70px">
+            <div class="col-lg-6" style="text-align:center">
+                <center><img class="img-responsive" style="" src="images/mona.png"></center>
             </div>
-            <div class="col-lg-4" style="text-align:center">
-                <img class="img-responsive" src="images/mona.png">
+            <div class="col-lg-6">
+                <h1 style="margin-bottom: -17px; color:white;" >MONA</h1>
+               <i><h3 style="color:white;">Social and Managerial Forefront</h3></i>
+                <p style="color:white;">Since joining forces with Pauly to start Pauly's Pizza, Mona has been the forefront of customers' experiences. Customers often remember her friendliness and warmth, and many are on first name basis with her. She is also the financial and managerial expert.</p>
             </div>
+            
         </div>    
     </div>
     </div>

@@ -16,20 +16,22 @@
     <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/navQ.css">
+
 </head>
 <body>
     <!-- Fixed navbar -->
 <nav class="navbar" style=" position:fixed; z-index:2; width: 100%; ">
-  <div class="container"  style=" width: 50%; " >
+  <div class="container" id = "navStuff" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
+        <span class ="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"> <img id="img-logo" src="images/paulyVec.png" ></a>
+      <a class="navbar-brand" href="index.html"> <img id="img-logo" src="images/paulyVec.png" ></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,7 +44,9 @@
       </ul>
      
       <ul class="nav navbar-nav navbar-right">
-           <li><a href="#"><img style = "width:100px; margin-top: -10px;" src="images/prime.jpg" ></a></li>
+           <li style = "background-color: #911a1e; height: 50px; margin-top: 5px ;"><a style = " font-size: 16px; line-height: 10px; margin-top: -6px; color: white; " href="https://primenow.amazon.com/restaurants/d/B06XNXMWW2?ref_=mrl_B06XNXMWW2"> <center> ORDER </center>
+           <br>
+           <center> NOW! </center> </a></li>
           
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -67,26 +71,56 @@
         <div id="homepage-text" class="col-lg-12">
          <!-- <h1 style = "padding-bottom:10px">Pauly's Pizza Joint</h1> -->
         <div class = "row">
-            <div class = "col-lg-4">
-                
-                <h3>LOCATION</h3>
+            <div class = "col-md-4 col-xs-12" id = "infoIndex">
+
+          <!-- double location and hours -->
+            <div id = "infos1">
+               <div id = "location" >  
+                <b><h3>LOCATION</h3></b>
                 <p>6780 Miramar Rd.
                 <br>San Diego, CA 92121 </p>
-                <br>
-
+               </div>
+              <br>
+               <div id = " hours">
                 <h3>HOURS</h3>
                 <p><b>Mon - Fri</b> | 10am - 9pm
                 <br><b>Sat</b> | 11am - 9pm
                 <br><b>Sunday</b> | closed
-                <br>
-                <br>
-                <h3>CONTACT</h3>
-         
-                 <p st><a id = "buttDial" href="tel:+1-619-882-4961" > <b> (858) 566-8646 </b></a></p>
-                 
+               </div>
             </div>
-            <div class = "col-md-8" >
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.7238753024226!2d-117.17122768452582!3d32.87902448608366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbff54b8c705f7%3A0x6c01e576dd591f4f!2sPauly&#39;s+Pizza+Joint!5e0!3m2!1sen!2sus!4v1498266174332" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <br>
+
+          <!-- double contacts --> 
+            <div id = "contact">
+                <h3>CONTACT</h3>
+                <p st><a id = "buttDial" href="tel:+1-619-882-4961" > <b> (858) 566-8646 </b></a></p>
+                   <p> ppjnov2011@gmail.com </p>
+               </div>
+            </div>
+
+
+            <div class = "col-xs-6" id = "infos2">
+               <div id = "location" >  
+                <h3>LOCATION</h3>
+                <p>6780 Miramar Rd.
+                <br>San Diego, CA 92121 </p>
+               </div>
+               <br>
+               <div id = " hours">
+                <h3>HOURS</h3>
+                <p><b>Mon - Fri</b> | 10am - 9pm
+                <br><b>Sat</b> | 11am - 9pm
+                <br><b>Sunday</b> | closed
+               </div>
+            </div>
+             <div class = "col-xs-6" id = "contact2">
+                <h3>CONTACT</h3>
+                <p st><a id = "buttDial" href="tel:+1-619-882-4961" > <b> (858) 566-8646 </b></a></p>
+               
+              </div>
+
+            <div class = "col-md-8" id ="maps" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.7238753024226!2d-117.17122768452582!3d32.87902448608366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbff54b8c705f7%3A0x6c01e576dd591f4f!2sPauly&#39;s+Pizza+Joint!5e0!3m2!1sen!2sus!4v1498266174332" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>  
      
           
@@ -106,13 +140,13 @@
       <div class="container" id="fonts" style=" padding-bottom:5%; padding-top:4%;">
       <!-- Three columns of text below the carousel -->
       <div class="row"> 
-        <div id="homepage-text" class="col-lg-12" style = " color: white" >
+        <div id="homepage-text2" class="col-lg-12" style = " color: white" >
          <!-- <h1 style = "padding-bottom:10px">Pauly's Pizza Joint</h1> -->
           <div class = "row">
-            <div class = "col-lg-6">
-                <img class="img-responsive" src="images/pauly.png">
+            <div class = "col-md-6">
+               <center> <img class="img-responsive" src="images/pauly.png"> </center>
             </div>
-            <div class = "col-lg-6">
+            <div class = "col-md-6">
               <h1>QUALITY, AUTHENTIC, LOCAL </h1>
               <br>
               <p>Since 2011, Pauly’s has been a local favorite. Serving up fresh, hand-tossed, New York pies straight out of the oven, at Pauly's we believe that quality food and customer service are the cornerstones to our business.</p>
@@ -125,11 +159,11 @@
     </div>
     
  <section id="portfolio">
-          <div class = "container" style = "margin-bottom:12%; z-index: 0" >
+          <div class = "container" index = "paulswall" style = "margin-bottom:12%; z-index: 0" >
 
-          <h1 style = "font-family: 'Zilla Slab', serif; margin-top: 7.5%;"> <b> PAUL's WALL </b></h1>
+          <h1 style = "font-family: 'Zilla Slab', serif; margin-top: 7.5%;" id = "paulswallhead"> <b> Paul's Wall </b></h1>
             <div class="row">
-                 <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                 <div class="col-md-4 portfolio-item"  style = "z-index: 0">
 
                     <a href="#" data-toggle="modal" data-target=".pop-up-1"  class="portfolio-link" >
                         <div class="caption">
@@ -143,7 +177,7 @@
                   
                 </div>
 
-                <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                <div class="col-md-4 portfolio-item" style = "z-index: 0">
                     <a href="#" data-toggle="modal" data-target=".pop-up-2"  class="portfolio-link" >
                         <div class="caption">
                             <div class="caption-content">
@@ -155,7 +189,7 @@
               
                 </div>
 
-                <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                <div class="col-md-4 portfolio-item" style = "z-index: 0">
                     <a href="#" data-toggle="modal" data-target=".pop-up-3"  class="portfolio-link" >
                         <div class="caption">
                             <div class="caption-content">
@@ -172,7 +206,7 @@
 
 
              <div class="row">
-                 <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                 <div class="col-md-4 portfolio-item" style = "z-index: 0">
 
                     <a href="#" data-toggle="modal" data-target=".pop-up-4"  class="portfolio-link" >
                         <div class="caption">
@@ -186,7 +220,7 @@
                   
                 </div>
 
-                <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                <div class="col-md-4 portfolio-item" style = "z-index: 0">
                     <a href="#" data-toggle="modal" data-target=".pop-up-5"  class="portfolio-link" >
                         <div class="caption">
                             <div class="caption-content">
@@ -198,7 +232,7 @@
               
                 </div>
 
-                <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                <div class="col-md-4 portfolio-item" style = "z-index: 0">
                     <a href="#" data-toggle="modal" data-target=".pop-up-6"  class="portfolio-link" >
                         <div class="caption">
                             <div class="caption-content">
@@ -215,7 +249,7 @@
 
 
              <div class="row">
-                 <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                 <div class="col-md-4 portfolio-item" style = "z-index: 0">
 
                     <a href="#" data-toggle="modal" data-target=".pop-up-7"  class="portfolio-link" >
                         <div class="caption">
@@ -229,7 +263,7 @@
                   
                 </div>
 
-                <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                <div class="col-md-4 portfolio-item" style = "z-index: 0">
                     <a href="#" data-toggle="modal" data-target=".pop-up-8"  class="portfolio-link" >
                         <div class="caption">
                             <div class="caption-content">
@@ -241,7 +275,7 @@
               
                 </div>
 
-                <div class="col-sm-4 portfolio-item" style = "z-index: 0">
+                <div class="col-md-4 portfolio-item" style = "z-index: 0">
                     <a href="#" data-toggle="modal" data-target=".pop-up-9"  class="portfolio-link" >
                         <div class="caption">
                             <div class="caption-content">
@@ -298,7 +332,7 @@
           <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
         </div>
         <div class="modal-body">
-        <img src="images/yelp_photo_8.jpg" class="img-responsive center-block" alt="">
+        <img src="images/yelp_photo_8.png" class="img-responsive center-block" alt="">
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -313,7 +347,7 @@
           <h4 class="modal-title" id="myLargeModalLabel-1"></h4>
         </div>
         <div class="modal-body">
-        <img src="images/yelp_photo_9.jpg" class="img-responsive center-block" alt="">
+        <img src="images/yelp_photo_Angry.jpg" class="img-responsive center-block" alt="">
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

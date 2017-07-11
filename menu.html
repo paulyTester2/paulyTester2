@@ -17,33 +17,36 @@
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+     <link rel="stylesheet" type="text/css" href="css/navQ.css">
 </head>
-<body>
+<body onload="load()">
     <!-- Fixed navbar -->
 <nav class="navbar" style=" position:fixed; z-index:2; width: 100%; ">
-  <div class="container"  style=" width: 50%; " >
+  <div class="container" id = "navStuff" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
+        <span class ="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"> <img id="img-logo" src="images/paulyVec.png" ></a>
+      <a class="navbar-brand" href="index.html"> <img id="img-logo" src="images/paulyVec.png" ></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.html">HOME <span class="sr-only">(current)</span></a></li>
-        <li class="active"><a href="menu.html">MENU</a></li>
+        <li class="active"> <a href="menu.html">MENU</a></li>
         <li><a href="catering.html">CATERING</a></li>
         <li><a href="story.html">ABOUT</a></li>
       </ul>
      
       <ul class="nav navbar-nav navbar-right">
-           <li><a href="#"><img style = "width:100px; margin-top: -10px;" src="images/prime.jpg" ></a></li>
+           <li style = "background-color: #911a1e; height: 50px; margin-top: 5px ;"><a style = " font-size: 16px; line-height: 10px; margin-top: -6px; color: white; " href="https://primenow.amazon.com/restaurants/d/B06XNXMWW2?ref_=mrl_B06XNXMWW2"> <center> ORDER </center>
+           <br>
+           <center> NOW! </center> </a></li>
           
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -51,38 +54,49 @@
 
   
 </nav>
-  
-     
-      <div class="menuBoard" id = "slide2" style = "display: block;">
+     <div class = "sacrifice" style= "background-color:red; height:60px;"> 
+
+     </div>
+     <center>
+     <div class = "hero" style="margin-top:-4px;">
+
+      <div class="menuBoard" id = "slide2" style = "display: block; padding-left:-10px;">
+        <img class="img-responsive" src="images/menuPizza.jpg">
       </div>
 
       <div class="menuBoard" id = "slide3" style = "display: none;">
+        <img class="img-responsive" src="images/menuRolls.jpg">
       </div>
 
   
       <div class="menuBoard" id = "slide4" style = "display: none;">
+        <img class="img-responsive" src="images/menuSandwich.jpg">
       </div>
 
   
       <div class="menuBoard" id = "slide5" style = "display: none;">
+        <img class="img-responsive" src="images/menuSalad.jpg">
       </div>
 
   
       <div class="menuBoard" id = "slide6" style = "display: none;">
+        <img class="img-responsive" src="images/menuApp.jpg">
       </div>
 
   
       <div class="menuBoard" id = "slide7" style = "display: none;">
+        <img class="img-responsive" src="images/menuDrinks.jpg">
       </div>
+    </div>
+    </center>
 
-
-
-        <div class="container">
-             <center>
-             <div class="menuTitle animated fadeIn">
-                    <div class="col-md-12" style="margin-bottom: 5%; margin-top: 5%;">
+        <div class="container" id >
+           
+             <div class="menuTitle animated fadeIn" >
+                    <center>
+                    <div class="col-md-12" style="margin-bottom: 5%; margin-top: 5%;" id = "menuBar">
                       <div class = "col-xs-6 col-md-2">
-                          <p id ="menuPizza" onclick="pizza()">PIZZA</p>
+                          <p id ="menuPizza" onclick="pizza()">PIZZAS</p>
                       </div>
                       <div class = "col-xs-6 col-md-2">
                            <p id ="menuRolls" onclick="rolls()">ROLLS</p>
@@ -95,38 +109,38 @@
                           <p id ="menuApp" onclick="appetizers()">APPETIZERS</p>
                       </div>
                       <div class = "col-xs-6 col-md-2">
-                          <p id ="menuSalad" onclick="salad()">SALAD</p>
+                          <p id ="menuSalad" onclick="salad()">SALADS</p>
                       </div>
                    
                       <div class = "col-xs-6 col-md-2">
-                          <p id ="menuDesserts" onclick="desserts()">DESSERTS</p>
+                          <p id ="menuDesserts" onclick="drinks()">DRINKS</p>
                       </div>
 
                     </div>
-               
+                    </center>
               </div>
-              </center>
+        </div>
+
+
+      
 
   <div class="container" style="padding-top:0px" id="fonts">
-    <div  class="row"> 
+
+  
+
       <div id="pizza" class="col-md-12" style = "display: block;">
-        <main id="accordion">
-     
-            <div class="menuTitle" id="menuTitleOne">
-                <h1>Pizza</h1>
-              <h4><i>signature thin crust pies</i></h4>
-         
-            </div>
-   
+
+        <main id="accordion">      
         <div class="col-md-6" id = "border">
+
           <section id="traditional"> <!-- Each "section" is a part of the accordion -->
-             <p id="imageOne" style = "font-family: 'Zilla Slab', serif;"> TRADITIONAL PIES<span style="float: right;">size "16 &nbsp; &nbsp &nbsp "18</span></p><!-- title of accordion -->
+             <p id="imageOne" style = "font-family: 'Zilla Slab', serif;"> TRADITIONAL PIES<span style="float: right;"> "16 &nbsp; &nbsp &nbsp "18</span></p><!-- title of accordion -->
            <p class="menuItem" id="traditionalP" align="right"></p> <!-- conent within accordion -->
             <p class="menuItem" id="tradCheese"> <b>Cheese </b> <span style="float: right;"> 14 &nbsp; &nbsp &nbsp &nbsp 16 &nbsp</span> </p>
             <p class="menuItem" id="tradPepp"> <b>Pepperoni </b> <span style="float: right;"> 15.50 &nbsp; 17.50 &nbsp</span> </p>
           </section>
           <section id="paulyChoice">
-            <p id="imageTwo" style = "font-family: 'Zilla Slab', serif;"> PAULY's CHOICE <span style="float: right;">size "16 &nbsp; &nbsp &nbsp "18 </span> </p>
+            <p id="imageTwo" style = "font-family: 'Zilla Slab', serif;"> PAULY's CHOICE <span style="float: right;"> "16 &nbsp; &nbsp &nbsp "18 </span> </p>
             <p class="menuItem" id="size" align="right">  </p>
             <p class="menuItem" id="pWalnuts" > <b> Pauly Walnuts </b> <span style="float: right;"> 22 &nbsp; &nbsp &nbsp &nbsp 24 &nbsp</span>
             <br>
@@ -171,7 +185,7 @@
 
         <div class="col-md-6" id = "border">
           <section id="chickenPies">
-           <p id="imageThree" style = "font-family: 'Zilla Slab', serif;"> CHICKEN PIES <span style="float: right;">size "16 &nbsp; &nbsp &nbsp "18</span>  </p>
+           <p id="imageThree" style = "font-family: 'Zilla Slab', serif;"> CHICKEN PIES <span style="float: right;"> "16 &nbsp; &nbsp &nbsp "18</span>  </p>
             <p class="menuItem" id="cSize" align="right"></p>
             <p class="menuItem" id="petsy"> <b>Pesty</b> <span style="float: right;"> 21.50 &nbsp; 23.50 &nbsp </span>    <br>
               <small> Whitecaps, chicken, basil pesto, no sauce </small>
@@ -215,11 +229,7 @@
 
 
           <div id="rolls" class="col-md-12" style = "display: none;">
-            <div class="menuTitle" id="menuTitleTwo">
-                <h1>Calzones/Rolls</h1>
-              <h4><i>served with a side of marinara sauce</i></h4>
-                
-            </div>
+       
 
             <div class="col-md-6" id = "border">
                 <a href="#calzoneRoll" id="imageFive"> </a>
@@ -244,9 +254,7 @@
           </div>
 
           <div id="sandwiches" class="col-md-12" style = "display: none;">
-              <div class="menuTitle" id="menuTitleThree">
-                <h1>Sandwiches</h1>
-              </div>
+        
               <div class="col-md-6" id = "border">
                   <a href="#sandwiches" id="imageSix"> </a>
                   <p class="menuItem" id="italianSub"> <b>Italian Sub</b> <span style="float: right;"> 8.50 </span>    <br>
@@ -265,9 +273,7 @@
 
 
           <div id="salads" class="col-md-12" style = "display: none;">
-            <div class="menuTitle" id="menuTitleFour">
-               <h1>Salads</h1>
-            </div>
+      
             <div class="col-md-6" id = "border">
               <a href="#salad" id="imageSeven"> </a>
               <p class="menuItem" align="right" id="sizeSalad"> <b>  small  &nbsp &nbsp  reg</b> </p>
@@ -282,6 +288,7 @@
               </p>
             </div>
             <div class="col-md-6" id = "border">
+            <p class="menuItem" align="right" id="sizeSalad"> <b>  small  &nbsp &nbsp  reg</b> </p>
               <p class="menuItem" id="antipasta"> <b>Antipasta </b> <span style="float: right;"> 6 &nbsp; &nbsp; &nbsp; 9 </span>    <br>
               <small> Fresh greens, ham, salami, capicola, roasted peppers, mozzarella, tomato, black olives, pepperoncinies </small>
               </p>
@@ -293,13 +300,10 @@
           </div>
 
           <div id="appetizers" class="col-md-12" style = "display: none;">
-            <div class="menuTitle" id="menuTitleFive">
-              <h1>Appetizers</h1>
-            
-            </div>
+      
              <div class="col-md-6" id = "border">
                 <a href="#appetizers" id="imageEight"> </a>
-                <p class="menuItem" align="right" id="sizeApp"> small &nbsp; &nbsp;reg </p>
+                 <p class="menuItem" align="right" id="sizeSalad"> <b>  small  &nbsp &nbsp  reg</b> </p>
                 <p class="menuItem" id="meatballsApp"><b>Meatballs </b> <span style="float: right;"> 7.50 &nbsp; 8.75 </span>    <br>
                <small> Prepared with marinara sauce and served with garlic bread </small>
                 </p>
@@ -316,9 +320,7 @@
           </div>
 
           <div id="drinks" class="col-md-12" style = "display: none;">
-            <div class="menuTitle" id="menuTitleSeven">
-              <h1>Drinks</h1>
-            </div>
+  
            <div class="col-md-6" id = "border">
             <a href="#drinks" id="imageTen"> </a>
             <p class="menuItem" id="fountain"> <b>Fountain Drink </b> <span style="float: right;"> 2 </span>    <br>
@@ -353,31 +355,9 @@
           </div>
 
 
-          
-
-
-        <!--
-            <div class="menuTitle" id="menuTitleEight">
-              <h1>Specials</h1>
-              <h4><i>available daily </i></h4>
-               <div class = "row" id = "menImage" >
-                     <img src="images/combos.png" class="img-responsive" alt="">
-                </div>
-            </div>
-          <section id="specials">
-         <div class="col-md-6" id = "border">
-            <a href="#specials" id="imageEleven"></a>
-            <p class="menuItem" id="slice"> <b>Slice</b> <span style="float: right;"> 3 </span> </p>
-            <p class="menuItem" id="twoSlice"> <b>2 Slices and Fountain Drink with Refills</b> <span style="float: right;"> 7 </span> </p>
-            <p class="menuItem" id="oneSlice"> <b>1 Slice and Fountain Drink with Refills and Small Garden Salad</b> <span style="float: right;"> 8.50 </span> </p> 
-        </div>
-        <div class="col-md-6" id = "border"> 
-            <p class="menuItem" id="threeSlice"><b>3 Slices and Fountain Drink with Refills</b> <span style="float: right;"> 9 </span> </p>
-            <p class="menuItem" id="eightSlice"> <b>8 Slices from the Case</b><span style="float: right;"> 19.50 </span> </p>
-          </section>
-        -->
+  
         
-        </main>
+      
       </div>
     </div> <!-- acordion end !-->
     
@@ -508,7 +488,7 @@
 <script>  
 
     function load(){
-          var highApp = document.getElementById('rollsButt').style.color = "rgb(242, 120, 75)";
+          var highApp = document.getElementById('menuPizza').style.color = "rgb(167, 31, 35)";
 
     }
  
@@ -649,7 +629,7 @@
 
      }
   
-      function desserts(){
+      function drinks(){
 
 
         var a = document.getElementById('pizza').style.display = 'none';    
@@ -657,8 +637,7 @@
         var c = document.getElementById('sandwiches').style.display = 'none';
         var d = document.getElementById('salads').style.display = 'none';
         var e = document.getElementById('appetizers').style.display = 'none';
-        var f = document.getElementById('drinks').style.display = 'none';
-        var g = document.getElementById('desserts').style.display = 'block';
+        var g = document.getElementById('drinks').style.display = 'block';
       
         var MP = document.getElementById('menuPizza').style.color = "black";
         var MR = document.getElementById('menuRolls').style.color = "black";

@@ -1,0 +1,64 @@
+#navStuff {
+	width: 50%;
+}
+
+
+@media (max-width: 1550px) {
+ 	#navStuff {
+ 		width: 65%;
+ 	}
+}
+
+@media (max-width: 1185px) {
+ 	#navStuff {
+ 		width: 75%;
+ 	}
+}
+
+@media (max-width: 1027px) {
+ 	#navStuff {
+ 		width: 90%;
+ 	}
+
+ 		#img-logo {
+ 		display: none;
+ 	}
+
+ 	#navStuff{
+ 	width: 110%;
+ 	margin-left: -10%;
+  	}
+}
+
+.navbar-toggle
+{
+	border-color: white;
+		border-radius: 0;
+			margin-top: 12px;
+}
+
+
+@media (max-width: 767px) {
+.navbar-collapse{
+	background-color: black;
+	margin-top:10px;
+}
+
+#img-logo{
+	display: block;
+	left: 25%;
+}
+
+	
+
+}
+
+.collapsed {
+	margin-top: 12px;
+	border-radius: 0;
+
+}
+
+.icon-bar {
+   background-color:white !important;
+}

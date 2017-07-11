@@ -6,7 +6,7 @@
 }
 
 #slide1{
-  background: url('../images//paulysCarouselver2.jpg') top center no-repeat;
+  background: url('../images//paulysCarouselver3.jpg') top center no-repeat;
    height:730px;
 }
 #slide2{
@@ -18,24 +18,43 @@
 }
 .carousel-caption{
 
-  margin-bottom: 12%;
-  width: 49%;
+  margin-bottom: 11%;
+  width:50%;
+
+ 
 }
 
 .button{
- float: right;
+float: right;
+}
+
+@media only screen and (max-width:1700px){
+    .carousel-caption{
+      margin-bottom: 14%;
+      width: 55%;
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .carousel-caption{
+      margin-bottom: 16%;
+      width: 60%;
+    }
 }
 
 
+@media only screen and (max-width:1200px){
+    .carousel-caption{
+      margin-bottom: 19%;
+      width: 65%;
+    }
+}
 
 /*--------------- mobile tab full -------------*/
 @media only screen and (max-width:979px){
-   #slide1{
-    height:550px;
-  }
 
   #slide1{
-  background: url('../images/paulysCarousel1-Med.jpg') top center no-repeat;
+  background: url('../images/paulysCarouselver3mob2.jpg') top center no-repeat;
   }
   #slide2{
     background: url('../images/slide2-med.png') top center no-repeat;
@@ -50,17 +69,22 @@
   padding-bottom:160px;
 
   }
+
+    .carousel-caption{
+      margin-bottom: 25%;
+      width: 70%;
+    }
   
 }
 
 @media only screen and (max-width:768px){
   #myCarousel .item{
-    height:440px;
+    height:500px;
   }
   
   #slide1{
-    background: url('../images/paulysCarousel1-Small.jpg') top center no-repeat;
-     height:430px;
+    background: url('../images/paulysCarouselver3Tab.jpg') top center no-repeat;
+     height:500px;
   }
   #slide2{
     background: url('../images/slide2-sm.png') top center no-repeat;
@@ -76,18 +100,23 @@
 
   }
 
+    .carousel-caption{
+      margin-bottom: 16%;
+      width: 70%;
+    }
+
 }
 
 @media only screen and (max-width:480px){
   #myCarousel .item{
-    height:240px;
+    height:400px;
   }
   .carousel-caption h3{
     font-size: 14px !important;
   } 
   #slide1{
-    background: url('../images/paulysCarousel1-XSmall.jpg') top center no-repeat;
-    height:305px;
+    background: url('../images/paulysCarouselver3XS.jpg') top center no-repeat;
+    height:400px;
   }
   #slide2{
     background: url('../images/slide2-xsm.png') top center no-repeat;
@@ -105,6 +134,11 @@
   .col-sm-4{
   padding-bottom:120px;
   }
+
+     .carousel-caption{
+      margin-bottom: 14%;
+      width: 80%;
+    }
 
 
 }
@@ -276,16 +310,27 @@ hr {
   
     }
 
+#name{
+   border: 4px solid black;
+   border-radius: 0px;
+} 
 
+#email{
+   border: 4px solid black;
+   border-radius: 0px;
+} 
 
+#message{
+   border: 4px solid black;
+   border-radius: 0px;
+} 
 
 #img-logo {
     z-index: 10;
     position: absolute;
     display: block;
-    margin-top: -15px;
-    max-width: 7.5%;
-
+    margin-top: -17px;
+    max-width: 150px;
     transform: translateX(-50%);
 }
 #navbar {
@@ -319,8 +364,7 @@ hr {
 }
 
 #fonts h1 {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: bold; 
+        font-weight: bold; 
 
 }
 
@@ -352,11 +396,58 @@ hr {
     border-bottom: 2.5px solid #149648;
   }
 
-#portfolio p{
+#infos2{
+  display: none;
+}
+
+
+#contact2{
+  display: none;
+}
+
+@media (max-width: 991px) {
+      #contact2{
+        display: block;
+      }
+
+      #contact {
+        display: none;
+      }
+
+      #infos2{
+        display: block;
+      }
+
+      #infos1 {
+        display: none;
+      }
+      #paulswall{
+        width:100%;
+      }
+      .img-responsive{
+        margin-bottom: 50px;
+      }
+
+      #paulswallhead{
+        font-size: 100px;
+        position: center;
+        margin-bottom: 25px;
+        color: #D2D7D3;
+      }
+   
+      #homepage-text{
+        margin-top: -100px;
+      }
+
+      .hero{
+        display: none;
+      }
+      .menuTitle{
+        margin-bottom: 50px;
+      }
 
 
 }
-
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -364,7 +455,7 @@ hr {
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -526,19 +617,11 @@ hr {
 #fonts p
 {
     font-family: "Calibri", Calibri, sans-serif;
+     font-size: 22px;
     
 }
-
-
-@media (min-width: 800px) {
   #fonts p {
-    font-size: 19px;
-  }
-}
-@media (min-width: 1200px) {
-  #fonts p {
-    font-size: 22px;
-  }
+   
 }
 
 
@@ -566,6 +649,20 @@ hr {
   .row {
     margin-top: 0px;
   }
+  .portfolio-link{
+    width: 90%;
+  }
+  #infos2{
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+  #contact2{
+    margin-top: 100px;
+  }
+  #maps{
+    margin-bottom: 50px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -579,10 +676,7 @@ hr {
   }
 }
 
-#white-container {
-    width: 100%;
-    background-image: url("../images/white_background.png");
-}
+
 
 #black-container {
     width: 100%;
@@ -605,8 +699,7 @@ hr {
 
 --#accordion section p {
     display: none;
-    padding-left: 5%;
-    padding-right: 5%;
+  
 }
 
 --#accordion section a{
@@ -640,6 +733,29 @@ hr {
     text-decoration: none;
     color: white;
 }
+
+.button2
+{
+    background-color: #911a1e;
+    color: white;
+    border-radius: 0px; 
+    padding: 10px 30px 10px 30px;
+    letter-spacing: 2px; 
+    
+}
+.button2:hover {
+    background-color: #973639;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:480px){
+    .button{
+         padding: 5px 15px 5px 15px;
+         margin-bottom: 14px;
+
+    }
+}
+
 #buttDial{
      position: center;
   color: #5A9558;
@@ -674,7 +790,17 @@ hr {
     color: white;
 
 }
+.buttonBlack
+{
+    background-color: black;
+    color: white;
+    border-radius: 0px; 
+    padding: 10px 30px 10px 30px;
+    letter-spacing: 2px; 
+    border: none;
 
+    
+}
 
 
 .buttonGreen
@@ -725,14 +851,32 @@ hr {
     }
 }
 
-#parallax-responsive {
-    font-size:50px;
+#storyText{
+    
+    padding-top: 7%;
+    font-size:150px;
     height: 500px;
 }
+
+@media (max-width: 800px) {
+  #storyText{
+      font-size:100px;
+      height: 400px;
+  }
+}
+@media (max-width: 425px) {
+  #storyText{
+    font-size:75px;
+      padding-top: 15%;
+  }
+}
+
 @media (min-width: 800px) {
   #parallax-responsive{
     font-size: 80px;
   }
+
+
 }
 @media (min-width: 1200px) {
   #parallax-responsive {
@@ -741,25 +885,19 @@ hr {
 }
 
 #fonts2 {
-    padding-left: 5%;
-    padding-right: 5%;
+
  
 }
 
 #fonts2 h1{
-     font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: bold; 
+         font-weight: bold; 
     text-align: center;
 }
 
-#fonts {
-    padding-left: 5%;
-    padding-right: 5%;
-}
+
 
 .menuItem {
-    padding-left: 10%
-    padding-right: 10%;
+
 }
 
 #footer {
@@ -856,39 +994,35 @@ hr {
 }
 
 #imageOne{
-  background-color: black;
+   background: url('../images//paulysCarouselver3.jpg') top center no-repeat;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 #imageTwo{
-  background-color: black;
+  background: url('../images//paulysCarouselver3.jpg') top center no-repeat;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
 margin-top: 20px;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-}
+  }
 
 #imageThree{
-  background-color: black;
+ background: url('../images//paulysCarouselver3.jpg') top center no-repeat;
     color: white;
     padding-left: 10px;
        padding-right: 10px;
        margin-top: 20px;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-}
+  }
 #imageFour{
-  background-color: black;
+ background: url('../images//paulysCarouselver3.jpg') top center no-repeat;
     color: white;
     padding-left: 10px;
        padding-right: 10px;
        margin-top: 20px;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-}
+  }
 
 #menuTitleOne{
   margin-top: -2%;

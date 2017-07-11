@@ -34,16 +34,37 @@
     font-size: 16px; 
 }
 
-.menuBoard {
-    height: 350px;
-}
-#slide2{
-  background: url('../images//krispyKream2.png') top center no-repeat;
+.menuItem{
+    margin-bottom: 7.5%;
 }
 
-#slide1{
-  background: url('../images//paulysCarouselver2.jpg') top center no-repeat;
+#slide2{
+ -webkit-animation-delay: 0s;
 }
+
+#slide3{
+   -webkit-animation-delay: -.1s;}
+
+#slide4{
+  -webkit-animation-delay: -.4s;
+}
+
+#slide5{
+ -webkit-animation-delay: -.4s;
+}
+
+
+#slide6{
+   -webkit-animation-delay: -.4s;
+}
+
+#slide7{
+ -webkit-animation-delay: -.4s;
+}
+
+
+
+
 
 
 .col-md-12{
@@ -59,24 +80,70 @@
   -moz-transition: all ease .7s;
     }
 
+
 .menuTitle p:hover:before{
     content: "";
     position: absolute;
-    width: 20%;
     left:40%;
+    width: 20%;
     bottom: 5px;
-    border-bottom: 4px solid #973639;
-    transition: all ease .7s;
-    -webkit-transition: all ease .7s;
-    -moz-transition: all ease .7s;
+    border-bottom: 4px solid  #973639;
+    transition: all ease .3s;
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
    
 }
 
 .menuTitle p{
 
    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   transition: all ease .7s;
-  -webkit-transition: all ease .7s;
-  -moz-transition: all ease .7s;
   font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
+
+#menuBar {
+    width: 90%;
+    left: 5%;
+}
+
+
+@media (max-width: 991px) {
+    .menuTitle{
+        padding-bottom: 10%;
+
+    }
+
+
+    }
+
+@media (max-width: 700px) {
+    .menuTitle{
+        padding-bottom: 15%;
+
+    }
+
+    }
+
+@media (max-width: 800px) {
+    .menuTitle p{
+        font-size: 15px;
+        float: left
+        left:-20px;
+    }
+        #border{
+        
+            left:0;
+        }
+    }
+
+@media (max-width: 425px) {
+    small{
+        font-size: 14px;
+    }
+    .menuItem p{
+        font-size: 10px;
+    }
+   
+    }
+
